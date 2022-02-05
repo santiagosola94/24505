@@ -1,0 +1,1407 @@
+/* Estilo Fuente */
+@font-face {
+    font-family: RobotoMono-Regular;
+    src: url(../fonts/RobotoMono-Regular/RobotoMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: Nunito-Light;
+    src: url(../fonts/Nunito-Light.ttf);
+}
+
+/* Estilos Generales */
+
+* {
+    margin: 0;
+
+}
+
+body {
+    font-family: RobotoMono-Regular;
+    height: 100vh;
+}
+
+
+/* Header */
+.header {
+    padding: 10px;
+    background-color: #EBEBD3;
+    text-align: center;
+    color: #083D77;
+    font-size: 20px;
+}
+
+/* Estilo de lista y/o nav */
+.menu {
+    padding: 20px;
+    margin: 0px;
+}
+
+.estiloTextoMenu {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Nunito-Light;
+}
+
+.styleUl {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style-type: none;
+}
+
+nav {
+    padding: 30px 10px;
+    background-color: #083D77;
+}
+
+ul {
+    padding: 0px;
+}
+
+/* seccion iframe */
+
+.styleIframe {
+    border: 10px solid rgb(0, 0, 0);
+    background-image: url(../images/fachry-zella-devandra-Yta-zdP9PVM-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.textIframe {
+    color: white;
+    padding: 20px 0px;
+}
+
+.flexIframe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Estilo Footer */
+
+footer {
+    background-color: #083D77;
+}
+
+.styleFooter {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Nunito-Light;
+    margin: 0px;
+    padding: 20px;
+}
+
+.styleTextFooter {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+}
+
+
+/* Estilo Texto */
+.alMedio {
+    text-align: center;
+}
+
+.aLaDerecha {
+    text-align: right;
+}
+
+.aLaIzquierda {
+    text-align: left;
+}
+
+.subrayado {
+    text-decoration: underline;
+}
+
+.cursiva {
+    font-style: italic;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.marginTop {
+    margin-top: 10px;
+}
+
+.arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.interlineado {
+    line-height: 40px;
+}
+
+.sinVineta {
+    list-style: none;
+}
+
+
+.textoAlNoventa {
+    width: 90%;
+}
+
+.tituloGrande {
+    font-size: 40px;
+    color: #083D77;
+}
+
+
+.styleContacto {
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+
+}
+
+.styleLegend {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+textarea {
+    resize: none;
+}
+
+.colorRojo {
+    color: red
+}
+
+.colorAzul {
+    color: blue;
+}
+
+
+.styleLogin {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.backgroundLogin {
+    background-color: #b0c8e0;
+    height: auto;
+}
+
+.bordeLogin {
+    border: 2px solid black;
+}
+
+.estiloboton {
+    margin: 10px;
+}
+
+
+
+/* NOMBRE GRIDS AREAS */
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+.nos {
+    grid-area: nos;
+}
+
+.vision {
+    grid-area: vision;
+}
+
+.mision {
+    grid-area: mision;
+}
+
+.objetivo {
+    grid-area: objetivo;
+}
+
+.tarjeta1 {
+    grid-area: tarjeta1;
+}
+
+.tarjeta2 {
+    grid-area: tarjeta2;
+}
+
+.tarjeta3 {
+    grid-area: tarjeta3;
+}
+
+.tarjeta4 {
+    grid-area: tarjeta4;
+}
+
+.saludo {
+    grid-area: saludo;
+}
+
+.ubi {
+    grid-area: ubi;
+}
+
+.banner {
+    grid-area: banner;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.barraFiltro {
+    grid-area: barraFiltro;
+}
+
+.seccionProductos {
+    grid-area: seccionProductos;
+}
+
+.tarjetaProductos1 {
+    grid-area: tarjetaProductos1;
+}
+
+.tarjetaProductos2 {
+    grid-area: tarjetaProductos2;
+}
+
+.tarjetaProductos3 {
+    grid-area: tarjetaProductos3;
+}
+
+.tarjetaProductos4 {
+    grid-area: tarjetaProductos4;
+}
+
+.tarjetaProductos5 {
+    grid-area: tarjetaProductos5;
+}
+
+.tarjetaProductos6 {
+    grid-area: tarjetaProductos6;
+}
+
+.articleLogin {
+    grid-area: articleLogin;
+}
+.loginGrid {
+    grid-area: loginGrid;
+}
+/************************************************************************
+MEDIA QUERIES
+************************************************************************/
+/* Vista DESKTOP */
+@media (min-width: 1024px) {
+
+    /* grid por areas */
+
+    #gridAreaIndex {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    #gridAreaMainIndex {
+        display: grid;
+        grid-template-areas:
+            "saludo saludo saludo saludo"
+            "tarjeta1 tarjeta2 tarjeta2 tarjeta4"
+            "tarjeta1 tarjeta3 tarjeta3 tarjeta4"
+            "banner banner banner banner"
+            "ubi ubi ubi ubi";
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 20vh 1fr 1fr 1fr 1fr;
+    }
+
+    #gridAreaProductos {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    #gridAreaProductosMain {
+        display: grid;
+        grid-template-areas:
+            "barraFiltro seccionProductos";
+        grid-template-columns: 15% auto;
+        grid-template-rows: 100%;
+    }
+
+    #gridAreaProductosMainGaleria {
+        display: grid;
+        grid-template-areas:
+            "tarjetaProductos1 tarjetaProductos2"
+            "tarjetaProductos3 tarjetaProductos4"
+            "tarjetaProductos5 tarjetaProductos6";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+
+    #gridAreasLogin {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "footer";        
+    }
+
+    #gridAreasLoginMain {
+        display: grid;
+        grid-template-areas: 
+        "articleLogin loginGrid";
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 1fr;
+    }
+    
+
+    #gridAreasNos {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    #gridAreasMainNosotros {
+        display: grid;
+        grid-template-areas:
+            "nos nos vision"
+            "mision mision vision"
+            "objetivo objetivo objetivo";
+        grid-template-columns: 25% 25% auto;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    /* Hover Nav */
+    .hoverNav a:hover {
+        background-color: rgb(5, 4, 85);
+    }
+
+    .hoverFoot a:hover {
+        background-color: rgb(5, 4, 85);
+    }
+
+    /* Estilo Main */
+
+    main {
+        background-color: #EBEBD3;
+    }
+
+    .colorBackground {
+        background-color: #EBEBD3;
+        background-image: linear-gradient(#083D77, #aaaee4)
+    }
+
+
+    .tarjeta1,
+    .tarjeta2,
+    .tarjeta3,
+    .tarjeta4,
+    .saludo {
+        border-radius: 30px;
+        background-color: #EBEBD3;
+        margin: 10px;
+    }
+
+    .saludoFlex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .marginAll {
+        margin: 5px;
+    }
+
+    .tarjetaContenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 15px;
+    }
+
+    .estiloTituloTarjeta {
+        color: #083D77;
+        margin: 10px;
+    }
+
+    .imagenTarjeta1,
+    .imagenTarjeta2,
+    .imagenTarjeta3,
+    .imagenTarjeta4 {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .banner {
+        height: 100%;
+        background-image: url(../images/sec/Sportside\ \(1\).png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 10px solid white;
+        max-width: 100%;
+        max-height: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Estilos Productos */
+    .barraFiltro {
+        background-color: #f9484a;
+        background-image: linear-gradient(315deg, #f9484a 0%, #fbd72b 74%);
+        font-size: large;
+    }
+
+    .paddingTopBot {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .divFlex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+
+    .tituloFiltro {
+        color: black;
+    }
+
+    .borderFiltro {
+        border: 3px solid black;
+    }
+
+    .borderBot {
+        border-bottom: 3px solid black;
+    }
+
+    .paddingFiltro {
+        padding: 10px;
+    }
+
+    .tarjetaProductos {
+        width: 350px;
+        height: 400px;
+        border-radius: 40px;
+        background-color: #083D77;
+        margin: 10px;
+        box-shadow: 0 5px 10px black;
+
+    }
+
+
+    .contenidoProductos {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: #EBEBD3;
+        font-family: sans-serif;
+        font-size: larger;
+    }
+
+    .imagenProducto {
+        width: 80%;
+        height: 80%;
+        box-sizing: content-box;
+    }
+
+    .paddingTexto {
+        padding: 20px;
+    }
+
+    .paddingBottom {
+        padding-bottom: 10px;
+    }
+
+    .bordeTitulo {
+        border-top: solid 10px black;
+        border-right: solid 10px black;
+        border-bottom: solid 0px black;
+        border-left: solid 10px black;
+    }
+
+    .bordeP {
+        border-top: solid 0px black;
+        border-right: solid 10px black;
+        border-bottom: solid 10px black;
+        border-left: solid 10px black;
+    }
+
+
+    .backgroundNosotros {
+        padding: 10px 20px 20px 20px;
+        background-color: rgb(211, 190, 182);
+        border: 5px solid white;
+    }
+
+    .imagenNosotros {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        border: 4px solid rgb(0, 0, 0);
+    }
+
+    .backgroundMision {
+        padding: 20px;
+        background-color: beige;
+        border: 5px solid rgb(253, 253, 253);
+    }
+
+    .imagenMision {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        border: 4px solid rgb(0, 0, 0);
+    }
+
+    .backgroundVision {
+        padding: 20px;
+        background-color: rgb(167, 208, 236);
+        border: 5px solid rgb(255, 244, 244);
+    }
+
+    .imagenVision {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        border: 4px solid rgb(3, 3, 3);
+    }
+
+    .backgroundObjetivo {
+        padding: 20px;
+        background-color: rgb(247, 148, 156);
+        border: 5px solid rgb(255, 255, 255);
+    }
+
+    .imagenObjetivo {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        border: 4px solid black;
+    }
+
+}
+
+
+
+/* Vista Tablet*/
+@media (min-width: 481px) and (max-width: 1023px) {
+
+    #gridAreaIndex {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    #gridAreaMainIndex {
+        display: grid;
+        grid-template-areas:
+            "saludo saludo"
+            "tarjeta1 tarjeta2"
+            "banner banner"
+            "tarjeta3 tarjeta4"
+            "ubi ubi";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 10% 1fr 50vh 1fr 1fr;
+    }
+
+    #gridAreaProductos {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    #gridAreaProductosMain {
+        display: grid;
+        grid-template-areas:
+            "barraFiltro seccionProductos";
+        grid-template-columns: 25% auto;
+        grid-template-rows: 100%;
+    }
+
+    #gridAreaProductosMainGaleria {
+        display: grid;
+        grid-template-areas:
+            "tarjetaProductos1"
+            "tarjetaProductos2"
+            "tarjetaProductos3"
+            "tarjetaProductos4"
+            "tarjetaProductos5"
+            "tarjetaProductos6";
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        justify-items: center;
+    }
+
+
+    #gridAreasNos {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    #gridAreasMainNosotros {
+        display: grid;
+        grid-template-areas:
+            "nos mision"
+            "vision objetivo";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    /* ESTILOS HEADER Y NAV */
+
+    header,
+    nav {
+        background-color: #3f0d12;
+        background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
+    }
+
+    .header {
+        padding: 10px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+    }
+
+    /* Estilo Footer */
+
+    footer {
+        background-color: #3f0d12;
+        background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
+    }
+
+    .styleFooter {
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        font-family: Nunito-Light;
+        margin: 0px;
+        padding: 20px;
+    }
+
+    .styleTextFooter {
+        text-decoration: none;
+        color: white;
+        font-size: 1em;
+    }
+
+    /* ESTILO MAIN INDEX */
+
+    main {
+        background-color: #EBEBD3;
+
+    }
+
+    .tarjeta1,
+    .tarjeta2,
+    .tarjeta3,
+    .tarjeta4,
+    .saludo {
+        border-radius: 30px;
+        background-color: #42378f;
+        background-image: linear-gradient(#42378f 0%, #f53844 74%);
+        margin: 10px;
+    }
+
+    .marginAll {
+        margin: 5px;
+    }
+
+    .tarjetaContenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        padding: 15px;
+        color: rgb(247, 217, 217);
+
+    }
+
+    .estiloTituloTarjeta {
+        color: rgb(247, 217, 217);
+        margin: 10px;
+    }
+
+    .imagenTarjeta1,
+    .imagenTarjeta2,
+    .imagenTarjeta3,
+    .imagenTarjeta4 {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .banner {
+        height: 100%;
+        background-image: url(../images/sec/Sportside\ \(1\).png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .saludoFlex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    /* Estilos Productos */
+
+    .tarjetaProductos {
+        width: 350px;
+        height: 400px;
+        border-radius: 40px;
+        background-color: #3f0d12;
+        background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
+        margin: 10px;
+        box-shadow: 0 5px 10px black;
+    }
+    
+    .divFlex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+
+    .barraFiltro {
+        background-color: #a71d31;
+        font-size: large;
+    }
+    .tituloFiltro {
+        color: white;
+    }
+    .colorFiltroText {
+        color: white;
+    }
+
+
+    .paddingTopBot {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .paddingFiltro {
+        padding: 10px;
+    }
+
+
+    .contenidoProductos {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: #EBEBD3;
+        font-family: sans-serif;
+        font-size: larger;
+    }
+
+    .imagenProducto {
+        width: 80%;
+        height: 80%;
+        box-sizing: content-box;
+    }
+
+    /* otros estilos */
+    .paddingTexto {
+        padding: 20px;
+    }
+
+    .paddingBottom {
+        padding-bottom: 10px;
+    }
+
+    .bordeTitulo {
+        border-top: solid 10px black;
+        border-right: solid 10px black;
+        border-bottom: solid 0px black;
+        border-left: solid 10px black;
+    }
+
+    .bordeP {
+        border-top: solid 0px black;
+        border-right: solid 10px black;
+        border-bottom: solid 10px black;
+        border-left: solid 10px black;
+    }
+
+    .imagenUno {
+        border-radius: 8px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    /* seccion iframe */
+
+    .styleIframe {
+        border: 10px solid rgb(0, 0, 0);
+        background-image: url(../images/fachry-zella-devandra-Yta-zdP9PVM-unsplash.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .textIframe {
+        color: white;
+        padding: 20px 0px;
+    }
+
+    /* ESTILOS NOSOTROS */
+    .backgroundNosotros {
+        padding: 10px 20px 20px 20px;
+        background-color: rgb(211, 190, 182);
+        border: 5px solid white;
+
+    }
+
+    .imagenNosotros {
+        max-width: 100%;
+        max-height: 100%;
+        border: 4px solid rgb(0, 0, 0);
+    }
+
+    .backgroundMision {
+        padding: 20px;
+        background-color: beige;
+        border: 5px solid rgb(253, 253, 253);
+    }
+
+    .imagenMision {
+        max-width: 100%;
+        max-height: 100%;
+        border: 4px solid rgb(0, 0, 0);
+    }
+
+    .backgroundVision {
+        padding: 20px;
+        background-color: rgb(167, 208, 236);
+        border: 5px solid rgb(255, 244, 244);
+    }
+
+    .imagenVision {
+        max-width: 100%;
+        max-height: 100%;
+        border: 4px solid rgb(3, 3, 3);
+    }
+
+    .backgroundObjetivo {
+        padding: 20px;
+        background-color: rgb(247, 148, 156);
+        border: 5px solid rgb(255, 255, 255);
+    }
+
+    .imagenObjetivo {
+        max-width: 100%;
+        max-height: 100%;
+        border: 4px solid black;
+    }
+
+
+
+
+}
+
+
+
+/* Vista Smarthphone */
+
+@media (max-width: 480px) {
+
+    #gridAreaIndex {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 2fr;
+    }
+
+    #gridAreaMainIndex {
+        display: grid;
+        grid-template-areas:
+            "saludo"
+            "tarjeta1"
+            "tarjeta2"
+            "tarjeta3"
+            "tarjeta4"
+            "ubi";
+        grid-template-columns: 100%;
+        grid-template-rows: 50vh 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    #gridAreaProductos {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    #gridAreaContacto {
+        display: grid;
+        grid-template-areas:
+        "header" 
+        "nav"
+        "main"
+        "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    #gridAreaMainContacto {
+        display: grid;
+        grid-template-areas: "contactoGrid";
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr;
+    }
+
+    #gridAreasLogin {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "footer";        
+    }
+
+    #gridAreasLoginMain {
+        display: grid;
+        grid-template-areas: 
+        "articleLogin"
+        "loginGrid";
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    #gridAreasNos {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 0px;
+    }
+
+    #gridAreasMainNosotros {
+        display: grid;
+        grid-template-areas:
+            "nos"
+            "mision"
+            "vision"
+            "objetivo";
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr;
+    }
+
+    header,
+    nav {
+        background: linear-gradient(to left, #005c97, #363795);
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    .header {
+        padding: 5px;
+        background: linear-gradient(to left, #005c97, #363795);
+        text-align: center;
+        color: white;
+        font-size: 10px;
+    }
+
+    .styleUl {
+        display: flex;
+        flex-flow: column nowrap;
+        text-align: center;
+        list-style-type: none;
+        background: linear-gradient(to left, #005c97, #363795);
+        padding: 0px;
+
+    }
+
+    .styleCajaLi {
+        border: 2px solid black;
+        height: auto;
+        margin: 3px;
+        padding: 5px;
+        background: linear-gradient(to left, #005c97, #cf5081);
+
+    }
+
+    .estiloTextoMenu {
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        font-family: Nunito-Light;
+    }
+
+    /* ESTILOS MAIN INDEX */
+    .colorBackground {
+        background: linear-gradient(to left, #005c97, #363795);
+    }
+
+    .imagenTarjeta1,
+    .imagenTarjeta2,
+    .imagenTarjeta3,
+    .imagenTarjeta4 {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .tarjeta1,
+    .tarjeta2,
+    .tarjeta3,
+    .tarjeta4,
+    .saludo {
+        border-radius: 10px;
+        background-color: #EBEBD3;
+        margin: 10px;
+    }
+
+    .saludoFlex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .marginAll {
+        margin: 5px;
+    }
+
+    .tarjetaContenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 15px;
+        box-sizing: content-box;
+    }
+
+    .estiloTituloTarjeta {
+        color: #083D77;
+        margin: 10px;
+    }
+
+    /* seccion iframe */
+
+    .styleIframe {
+        border: 10px solid rgb(0, 0, 0);
+        background-image: url(../images/fachry-zella-devandra-Yta-zdP9PVM-unsplash.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .vistaSmart {
+        width: 100%;
+        height: 100%;
+    }
+
+    .textIframe {
+        color: white;
+        padding: 20px 0px;
+    }
+
+    .flexIframe {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    /* Estilo Main Productos */
+    .bgcMainProductos{
+        background-color: #EBEBD3;
+    }
+    .barraFiltro {
+        background: linear-gradient(to left, #005c97, #363795);
+        font-size: large;
+    }
+
+    .paddingTopBot {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .divFlex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+
+    .tituloFiltro {
+        color: black;
+    }
+
+    .borderFiltro {
+        border: 3px solid black;
+    }
+
+    .borderBot {
+        border-bottom: 3px solid black;
+    }
+
+    .paddingFiltro {
+        padding: 10px;
+    }
+
+    .tarjetaProductos {
+        width: auto;
+        height: 70vh;
+        border-radius: 40px;
+        background-color: #083D77;
+        margin: 10px;
+        box-shadow: 0 5px 10px black;
+    }
+
+    .contenidoProductos {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: #EBEBD3;
+        font-family: sans-serif;
+        font-size: larger;
+    }
+
+    .imagenProducto {
+        width: 80%;
+        height: 80%;
+        box-sizing: content-box;
+    }
+
+    .paddingTexto {
+        padding: 20px;
+    }
+
+    .paddingBottom {
+        padding-bottom: 10px;
+    }
+
+    .tituloFiltro {
+        color: white;
+    }
+    .colorFiltroText {
+        color: white;
+    }
+
+    /* ESTILO CONTACTO */
+    .styleContacto {
+        padding: 0px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1rem;
+        margin: 0;
+    }
+    
+    .styleLegend {
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+    textarea {
+        resize: horizontal ;
+    }
+
+    .bgcMainContacto {
+        background-color: #EBEBD3;
+    }
+
+    /* ESTILO LOGIN */
+    
+    .styleLogin {
+        padding: 0px;
+        width: 100%;
+}
+
+    .backgroundLogin {
+        background-color: #b0c8e0;
+        height: auto;
+}
+
+    .bordeLogin {
+    border: 2px solid black;
+}
+
+    .estiloboton {
+    margin: 1px;
+}
+    .colorBcgLogin {
+        background-color: #EBEBD3;
+    }
+
+    /* ESTILOS MAIN NOSOTROS */
+    .backgroundNosotros {
+        padding: 10px 20px 20px 20px;
+        background-color: rgb(211, 190, 182);
+        border: 5px solid rgb(255, 255, 255);
+    }
+
+    .imagenNosotros {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .backgroundMision {
+        padding: 20px;
+        background-color: beige;
+        border: 5px solid rgb(255, 255, 255);
+    }
+
+    .imagenMision {
+        max-width: 100%;
+        max-height: 100%;
+        border: 4px solid rgb(0, 0, 0);
+    }
+
+    .backgroundVision {
+        padding: 20px;
+        background-color: rgb(167, 208, 236);
+        border: 5px solid rgb(255, 255, 255);
+    }
+
+    .imagenVision {
+        max-width: 100%;
+        max-height: 100%;
+        border: 4px solid rgb(3, 3, 3);
+    }
+
+    .backgroundObjetivo {
+        padding: 20px;
+        background-color: rgb(247, 148, 156);
+        border: 5px solid rgb(255, 255, 255);
+    }
+
+    .imagenObjetivo {
+        max-width: 100%;
+        max-height: 100%;
+        border: 4px solid black;
+    }
+
+    /* ESTILO FOOTER */
+
+    footer {
+        background: linear-gradient(to left, #005c97, #363795);
+    }
+
+    .styleFooter {
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        font-family: Nunito-Light;
+        margin: 0px;
+        padding: 10px;
+    }
+
+    .styleTextFooter {
+        text-decoration: none;
+        color: white;
+        font-size: 1em;
+    }
+
+
+}
