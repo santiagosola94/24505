@@ -642,7 +642,15 @@ MEDIA QUERIES
 
 }
 
+/* Transiciones Productos */
+.transicion {
+    transition: width 2s;
+}
 
+.transicion:hover {
+    width: 500px;
+    background-color: #3f0d12;
+}
 
 /* Vista Tablet*/
 @media (min-width: 481px) and (max-width: 1023px) {
