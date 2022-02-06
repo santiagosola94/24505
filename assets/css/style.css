@@ -653,13 +653,13 @@ MEDIA QUERIES
         border: 2px solid white;
     }
 
+    /* Animaciones */
+
     .tituloAnimado {
         animation-name: tituloAnimado;
         animation-duration: 5s;
         animation-iteration-count: 1;
     }
-    /* Animaciones */
-
 
     @keyframes tituloAnimado {
         0% {
