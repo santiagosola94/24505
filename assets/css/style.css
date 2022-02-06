@@ -306,9 +306,11 @@ footer {
 .articleLogin {
     grid-area: articleLogin;
 }
+
 .loginGrid {
     grid-area: loginGrid;
 }
+
 /************************************************************************
 MEDIA QUERIES
 ************************************************************************/
@@ -372,21 +374,21 @@ MEDIA QUERIES
 
     #gridAreasLogin {
         display: grid;
-        grid-template-areas: 
-        "header"
-        "nav"
-        "main"
-        "footer";        
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
     }
 
     #gridAreasLoginMain {
         display: grid;
-        grid-template-areas: 
-        "articleLogin loginGrid";
+        grid-template-areas:
+            "articleLogin loginGrid";
         grid-template-columns: 40% 60%;
         grid-template-rows: 1fr;
     }
-    
+
 
     #gridAreasNos {
         display: grid;
@@ -640,16 +642,69 @@ MEDIA QUERIES
         border: 4px solid black;
     }
 
-}
+    /* Transiciones Productos */
+    .transicion {
+        transition: all 2s;
+    }
 
-/* Transiciones Productos */
-.transicion {
-    transition: width 2s;
-}
+    .transicion:hover {
+        width: 500px;
+        background-color: #3f0d12;
+        border: 2px solid white;
+    }
 
-.transicion:hover {
-    width: 500px;
-    background-color: #3f0d12;
+    .tituloAnimado {
+        animation-name: tituloAnimado;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+    }
+    /* Animaciones */
+
+
+    @keyframes tituloAnimado {
+        0% {
+            transform: translatex(-1000px);
+            opacity: 0;
+        }
+        20% {
+            transform: translatex(0px);
+            opacity: 1;
+        }
+        50% {
+            transform: translatex(0px);
+            transform: rotateX(170deg);
+            opacity: 1;
+        }
+        80% {
+            transform: translatex(1000px);
+            opacity: 0;
+        }
+        90% {
+            transform: translate(-1000px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0px);
+            opacity: 1;
+        }
+    }
+
+    .navAnimado {
+    animation-name: navAnimado;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    }
+
+    @keyframes navAnimado {
+        from {
+            opacity: 0;
+            transform: translate(1000px);
+        }
+        to {
+            opacity: 1;
+            transform: translate(0px);
+        }
+    }
 }
 
 /* Vista Tablet*/
@@ -843,7 +898,7 @@ MEDIA QUERIES
         margin: 10px;
         box-shadow: 0 5px 10px black;
     }
-    
+
     .divFlex {
         display: flex;
         flex-direction: column;
@@ -855,9 +910,11 @@ MEDIA QUERIES
         background-color: #a71d31;
         font-size: large;
     }
+
     .tituloFiltro {
         color: white;
     }
+
     .colorFiltroText {
         color: white;
     }
@@ -867,7 +924,7 @@ MEDIA QUERIES
         padding-top: 20px;
         padding-bottom: 20px;
     }
-    
+
     .paddingFiltro {
         padding: 10px;
     }
@@ -1039,13 +1096,14 @@ MEDIA QUERIES
     #gridAreaContacto {
         display: grid;
         grid-template-areas:
-        "header" 
-        "nav"
-        "main"
-        "footer";
+            "header"
+            "nav"
+            "main"
+            "footer";
         grid-template-columns: 100%;
         grid-template-rows: 1fr 1fr 1fr 1fr;
     }
+
     #gridAreaMainContacto {
         display: grid;
         grid-template-areas: "contactoGrid";
@@ -1055,22 +1113,22 @@ MEDIA QUERIES
 
     #gridAreasLogin {
         display: grid;
-        grid-template-areas: 
-        "header"
-        "nav"
-        "main"
-        "footer";        
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
     }
 
     #gridAreasLoginMain {
         display: grid;
-        grid-template-areas: 
-        "articleLogin"
-        "loginGrid";
+        grid-template-areas:
+            "articleLogin"
+            "loginGrid";
         grid-template-columns: 100%;
         grid-template-rows: 1fr 1fr;
     }
-    
+
     #gridAreasNos {
         display: grid;
         grid-template-areas:
@@ -1219,9 +1277,10 @@ MEDIA QUERIES
     }
 
     /* Estilo Main Productos */
-    .bgcMainProductos{
+    .bgcMainProductos {
         background-color: #EBEBD3;
     }
+
     .barraFiltro {
         background: linear-gradient(to left, #005c97, #363795);
         font-size: large;
@@ -1294,6 +1353,7 @@ MEDIA QUERIES
     .tituloFiltro {
         color: white;
     }
+
     .colorFiltroText {
         color: white;
     }
@@ -1305,14 +1365,14 @@ MEDIA QUERIES
         font-size: 1rem;
         margin: 0;
     }
-    
+
     .styleLegend {
         font-weight: bold;
         font-size: 1rem;
     }
 
     textarea {
-        resize: horizontal ;
+        resize: horizontal;
     }
 
     .bgcMainContacto {
@@ -1320,24 +1380,25 @@ MEDIA QUERIES
     }
 
     /* ESTILO LOGIN */
-    
+
     .styleLogin {
         padding: 0px;
         width: 100%;
-}
+    }
 
     .backgroundLogin {
         background-color: #b0c8e0;
         height: auto;
-}
+    }
 
     .bordeLogin {
-    border: 2px solid black;
-}
+        border: 2px solid black;
+    }
 
     .estiloboton {
-    margin: 1px;
-}
+        margin: 1px;
+    }
+
     .colorBcgLogin {
         background-color: #EBEBD3;
     }
